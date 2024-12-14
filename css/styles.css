@@ -86,7 +86,7 @@ body {
   background-color: #f6f6f9;
 }
 .content {
-  max-width: 1400px;
+  max-width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -98,11 +98,24 @@ body {
   border-radius: 5px;
 }
 
+*:focus{
+  outline: 0;
+  box-shadow: 0 0 0 4px rgba( 41 , 80 , 147 , 0.4);
+}
 .logo {
   display: flex;
   padding: 4px 8px;
   background-color: #fff;
   box-shadow: 0px 2px 6px rgba(200, 200, 200, 0.25);
+  transition:transform 0.3s ease;
+}
+.logo:hover{ 
+  transform: scale(1.025);
+  
+
+}
+.logo:focus{
+  box-shadow: 0 0 0 4px rgba( 41 , 80 , 147 , 0.4);
 }
 .logo-img {
 }
@@ -121,8 +134,8 @@ body {
 .exchange-rates-item:not(:last-child) {
   margin-right: 26px;
 }
-.site-header-actions {
-  display: flex;
+.site-header-actions{
+  display: flex; 
   flex-wrap: wrap;
   margin-left: auto;
 }
@@ -138,35 +151,45 @@ body {
   margin-right: 22px;
   border-radius: 5px;
   background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
 }
-.search-button-wrapper{
+.search-button-wrapper {
   display: flex;
   padding: 8px;
   justify-content: center;
   align-items: center;
 }
 .search-button-img {
+  width: 35px;
+  height: 20px;
 }
-.language-toggler {
+.language-toggler { 
+  display: flex;
+  gap: 5px;
   padding: 10px;
   border: none;
   margin-right: 22px;
   border-radius: 5px;
   background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
 }
-.language-toggler-wrapper{
+.language-toggler-wrapper { 
   display: flex;
   align-items: center;
   font-weight: 500;
-
 }
 .language-toggler-img {
   width: 20px;
-  height: 20px; 
+  height: 20px;
   margin-right: 5px;
-  border-radius: 50px;  
+  border-radius: 50px;
 }
-.language-toggler-text {
+.language-toggler-text {  
+
+} 
+.search-button:hover,
+.language-toggler:hover{
+  box-shadow: 0 5px 8px rgba( 0, 0, 0 , 0.1)
 }
 .telegram-sub {
   display: flex;
@@ -178,9 +201,11 @@ body {
   background-image: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 96%);
   color: #fff;
   text-decoration: none;
+  transition: box-shadow 0.3s ease;
 }
-.telegram-sub:hover{
+.telegram-sub:hover {
   background-image: linear-gradient(90deg, #37aee2 15.07%, #1e96c8 96%);
+  box-shadow: 0 5px 8px rgba( 0, 0, 0 , 0.1)
 }
 .telegram-sub-img {
   margin-right: 7px;
