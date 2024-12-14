@@ -93,9 +93,12 @@ body {
 .site-header-top {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center; 
+  margin-bottom: 40px;
+  font-size: 16px;
   line-height: 19px;
-  border-radius: 5px;
+  border-radius: 5px; 
+
 }
 
 *:focus{
@@ -152,6 +155,7 @@ body {
   border-radius: 5px;
   background-color: #ffffff;
   transition: box-shadow 0.3s ease;
+  cursor: pointer;
 }
 .search-button-wrapper {
   display: flex;
@@ -172,6 +176,7 @@ body {
   border-radius: 5px;
   background-color: #ffffff;
   transition: box-shadow 0.3s ease;
+  cursor: pointer;
 }
 .language-toggler-wrapper { 
   display: flex;
@@ -213,4 +218,42 @@ body {
 }
 .telegram-sub-text {
   font-weight: bold;
+} 
+/* SITENAV */
+.sitenav{
+  margin-bottom: 18px;
+  border-radius: 5px;
+  background-color: #fff; 
+  box-shadow:0 2px 5px rgba(159, 159, 159, 0.19)
+}
+.sitenav-list{
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 12px;
+  margin: 0;
+  list-style-type: none;
+} 
+.sitenav-item {
+  margin: 5px 12px;
+}
+
+.sitenav-link{ 
+  display: block;
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 600;
+  color:#515151;   
+  text-decoration: none;
+}
+.sitenav-link:hover{
+  color:#295091;
+}
+/* TOP-BANNER */
+.top-banner{
+  display: flex;
+}
+.top-banner-img{
+  width: 100%;
 }
